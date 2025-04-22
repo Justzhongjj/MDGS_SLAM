@@ -1,6 +1,5 @@
-# MD_SLAM
-Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
-# RTG-SLAM: Real-time 3D Reconstruction at Scale Using Gaussian Splatting
+
+# Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
 
 Zhexi Peng, Tianjia Shao, Liu Yong, Jingke Zhou, Yin Yang, Jingdong Wang, Kun Zhou
 ![Teaser image](assets/teaser.png)
