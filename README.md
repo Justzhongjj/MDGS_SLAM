@@ -79,12 +79,6 @@ cp configs/tum/dataset/fr2_xyz.yaml data/TUM_RGBD/rgbd_dataset_freiburg2_xyz/con
 cp configs/tum/dataset/fr3_office.yaml data/TUM_RGBD/rgbd_dataset_freiburg3_long_office_household/config.yaml
 ```
 
-
-### 2.3 ScanNet++
-Please follow [ScanNet++](https://kaldir.vc.in.tum.de/scannetpp/) to download dataset. And run
-```bash
-python scripts/parse_scannetpp.py --data_path scannetpp_path/download/data/8b5caf3398 --output_path data/ScanNetpp/8b5caf3398
-```
 ### 2.4 Ours
 You can donwload our dataset from [google cloud](https://drive.google.com/drive/folders/161QHjVTHRCED9WmRWAlOEhJQ_GXxgtn5?usp=sharing). 
 
@@ -93,8 +87,7 @@ You can donwload our dataset from [google cloud](https://drive.google.com/drive/
 
 ```
 |-- data
-    |-- Ours
-        |-- hotel
+    
     |-- Replica
         |-- office0
             |-- results
@@ -103,13 +96,6 @@ You can donwload our dataset from [google cloud](https://drive.google.com/drive/
         |-- cam_params.json
     |-- TUM_RGBD
         |-- rgbd_dataset_freiburg1_desk
-    |-- ScanNetpp
-        |-- 8b5caf3398
-            |-- color
-            |-- depth
-            |-- intrinsic
-            |-- pose
-            |-- mesh_aligned_cull.ply
 ```
 
 ## 3. Run
@@ -129,14 +115,6 @@ python slam.py --config ./configs/tum/fr1_desk.yaml
 python slam_mp.py --config ./configs/tum/fr1_desk.yaml
 ```
 
-### 3.3 ScanNet++
-```bash
-# Single Process: Recommended, More Stable
-python slam.py --config ./configs/scannetpp/8b5caf3398.yaml
-# Multi Process: 
-python slam_mp.py --config ./configs/scannetpp/8b5caf3398.yaml
-```
-
 ### 3.4 Ours
 ```bash
 # Single Process: Recommended, More Stable
@@ -146,20 +124,6 @@ python slam_mp.py --config ./configs/ours/hotel.yaml
 ```
 
 ## 4. Evaluate
-You can run metric.py to evaluate the rendering quality on Replica, ScanNet++ and Ours dataset and calculate geometry accuracy on Replica and ScanNet++.
-There will be a csv result file in model path.
-The tracking accuracy is estimated right after running slam.py. The ate result is in model_path/save_traj.
-#### Note
-The script selects all images when computing psnr, lpips and ssim. Our method adds Gaussian according to the depth so the performance may decrease in the presence of significant depth noise or invalid depth (such as transparent materials, highly reflective materials, etc.). For fairness, when evaluating novel view synthesis on ScanNet++ in the paper, we manually removed images with large invalid depth areas.
-
-
-```bash
-python metric.py --config config_path \
-    # eval the first k frames
-    ----load_frame k \
-    # save pictures
-    --save_pic
-```
 
 ### 4.1 Replica
 ```bash
@@ -169,15 +133,6 @@ python metric.py --config ./configs/replica/office0.yaml
 ```bash
 python metric.py --config ./configs/tum/fr1_desk.yaml
 ```
-### 4.3 ScanNet++
-```bash
-python metric.py --config ./configs/scannetpp/8b5caf3398.yaml # all novel view images
-```
-### 4.4 Ours
-```bash
-python metric.py --config ./configs/ours/hotel.yaml
-```
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
