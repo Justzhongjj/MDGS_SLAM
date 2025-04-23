@@ -108,7 +108,7 @@ python slam.py --config ./configs/replica/office0.yaml
 ```bash
 
 # Multi Process: 
-python slam_mp.py --config ./configs/tum/fr1_desk.yaml
+python slam.py --config ./configs/tum/fr1_desk.yaml
 ```
 
 ### 3.4 Ours
