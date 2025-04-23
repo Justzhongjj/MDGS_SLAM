@@ -99,10 +99,9 @@ You can donwload our dataset from [google cloud](https://drive.google.com/drive/
 ## 3. Run
 ### 3.1 Replica
 ```bash
-# Single Process: 
-python slam.py --config ./configs/replica/office0.yaml
+
 # Multi Process:
-python slam.py --config configs/rgbd/replica/office0_sp.yaml
+python slam.py --config ./configs/replica/office0.yaml
 ```
 
 ### 3.2 TUM-RGBD
