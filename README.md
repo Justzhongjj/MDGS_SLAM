@@ -19,7 +19,7 @@ git clone --recursive https://github.com/Justzhongjj/MD_SLAM
 ```
 
 ### 1.2 Python Environment
-RTG-SLAM has been tested on python 3.9, CUDA=11.7, pytorch=1.13.1. The simplest way to install all dependences is to use [anaconda](https://www.anaconda.com/) and [pip](https://pypi.org/project/pip/) in the following steps: 
+RTG-SLAM has been tested on python 3.9, CUDA=11.6, pytorch=1.12.1. The simplest way to install all dependences is to use [anaconda](https://www.anaconda.com/) and [pip](https://pypi.org/project/pip/) in the following steps: 
 
 ```bash
 conda env create -f environment.yaml
@@ -62,6 +62,7 @@ SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native")
 ```
 
 If the code runs without any error and the trajetory is corret, you can move on to the next step.
+If you encounter any issues while installing the ORB-SLAM2 Python Binding, you can refer to [RTG-SLAM](https://github.com/MisEty/RTG-SLAM).
 
 ## 2. Dataset Preparation
 ### 2.1 Replica
