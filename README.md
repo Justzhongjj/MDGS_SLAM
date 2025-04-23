@@ -15,7 +15,7 @@ Abstract: *We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconst
 ### 1.1 Clone the Repository
 
 ```
-git clone --recursive https://github.com/MisEty/RTG-SLAM.git
+git clone --recursive https://github.com/Justzhongjj/MD_SLAM
 ```
 
 ### 1.2 Python Environment
