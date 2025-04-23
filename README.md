@@ -1,14 +1,11 @@
 
 # Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
 
-Zhexi Peng, Tianjia Shao, Liu Yong, Jingke Zhou, Yin Yang, Jingdong Wang, Kun Zhou
+zhongjj
 ![Teaser image](assets/teaser.png)
 
-This repository contains the official authors implementation associated with the paper "RTG-SLAM: Real-time 3D Reconstruction
+This repository contains the official authors implementation associated with the paper "MD-SLAM: Real-time 3D Reconstruction
 at Scale Using Gaussian Splatting", which can be found [here](https://gapszju.github.io/RTG-SLAM/static/pdfs/RTG-SLAM_arxiv.pdf).
-
-Abstract: *We present Real-time Gaussian SLAM (RTG-SLAM), a real-time 3D reconstruction system with an RGBD camera for large-scale environments using Gaussian splatting. The system features a compact Gaussian representation and a highly efficient on-the-fly Gaussian optimization scheme. We force each Gaussian to be either opaque or nearly transparent, with the opaque ones fitting the surface and dominant colors, and transparent ones fitting residual colors. By rendering depth in a different way from color rendering, we let a single opaque Gaussian well fit a local surface region without the need of multiple overlapping Gaussians, hence largely reducing the memory and computation cost. For on-the-fly Gaussian optimization, we explicitly add Gaussians for three types of pixels per frame: newly observed, with large color errors, and with large depth errors. We also categorize all Gaussians into stable and unstable ones, where the stable Gaussians are expected to well fit previously observed RGBD images and otherwise unstable. We only optimize the unstable Gaussians and only render the pixels occupied by unstable Gaussians. In this way, both the number of Gaussians to be optimized and pixels to be rendered are largely reduced, and the optimization can be done in real time. We show real-time reconstructions of a variety of large scenes. Compared with the state-of-the-art NeRF-based RGBD SLAM, our system achieves comparable high-quality reconstruction but with around twice the speed and half the memory cost, and shows superior performance in the realism of novel view synthesis and camera tracking accuracy.*
-
 
 ## 1. Installation
 
@@ -61,7 +58,7 @@ SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_C_FLAGS_RELEASE} -O3 -march=native")
 SET(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -march=native")
 ```
 
-If the code runs without any error and the trajetory is corret, you can move on to the next step.
+If the code runs without any error and the trajetory is corret, you can move on to the next step.  
 If you encounter any issues while installing the ORB-SLAM2 Python Binding, you can refer to [RTG-SLAM](https://github.com/MisEty/RTG-SLAM).
 
 ## 2. Dataset Preparation
