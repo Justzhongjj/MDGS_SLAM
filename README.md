@@ -2,7 +2,7 @@
 # Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
 
 zhongjj
-![Teaser image](media/teaser.png)
+![method](media/method.jpg)
 
 This repository contains the official authors implementation associated with the paper "MD-SLAM: Real-time 3D Reconstruction
 at Scale Using Gaussian Splatting", which can be found [here](https://gapszju.github.io/RTG-SLAM/static/pdfs/RTG-SLAM_arxiv.pdf).
