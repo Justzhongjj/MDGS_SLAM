@@ -158,4 +158,5 @@ This work incorporates many open-source codes. We extend our gratitude to the au
 - [MonoGS](https://github.com/muskie82/MonoGS)
 - [RTG-SLAM](https://github.com/MisEty/RTG-SLAM)
 - [MVGS](https://github.com/xiaobiaodu/MVGS)
+    
 We thank all the authors for their great work.
