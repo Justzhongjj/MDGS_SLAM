@@ -104,14 +104,13 @@ You can donwload our dataset from [google cloud](https://drive.google.com/drive/
 ```bash
 # Single Process: Recommended, More Stable
 python slam.py --config ./configs/replica/office0.yaml
-# Multi Process: 
-python slam_mp.py --config ./configs/replica/office0.yaml
+# Multi Process:
+python slam.py --config configs/rgbd/replica/office0_sp.yaml
 ```
 
 ### 3.2 TUM-RGBD
 ```bash
-# Single Process: Recommended, More Stable
-python slam.py --config ./configs/tum/fr1_desk.yaml
+
 # Multi Process: 
 python slam_mp.py --config ./configs/tum/fr1_desk.yaml
 ```
