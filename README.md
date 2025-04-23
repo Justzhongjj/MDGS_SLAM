@@ -147,4 +147,15 @@ python slam_mp.py --config ./configs/tum/fr1_desk.yaml --eval
 
 
 ## Acknowledgments
-This project is built upon [3DGS](https://github.com/graphdeco-inria/gaussian-splatting). The ORB-SLAM backend is based on [ORB-SLAM2](https://github.com/raulmur/ORB_SLAM2). The ORB-SLAM2 Python Binding is based on [ORB_SLAM2-PythonBindings](https://github.com/jskinn/ORB_SLAM2-PythonBindings). The evaluation script is adopted from [NICE-SLAM](https://github.com/cvg/nice-slam) and [Point-SLAM](https://github.com/eriksandstroem/Point-SLAM). We thank all the authors for their great work.
+This work incorporates many open-source codes. We extend our gratitude to the authors of the software.
+- [3D Gaussian Splatting](https://github.com/graphdeco-inria/gaussian-splatting)
+- [Differential Gaussian Rasterization
+](https://github.com/graphdeco-inria/diff-gaussian-rasterization)
+- [SIBR_viewers](https://gitlab.inria.fr/sibr/sibr_core)
+- [Tiny Gaussian Splatting Viewer](https://github.com/limacv/GaussianSplattingViewer)
+- [Open3D](https://github.com/isl-org/Open3D)
+- [Point-SLAM](https://github.com/eriksandstroem/Point-SLAM)
+- [MonoGS](https://github.com/muskie82/MonoGS)
+- [RTG-SLAM](https://github.com/MisEty/RTG-SLAM)
+- [MVGS](https://github.com/xiaobiaodu/MVGS)
+We thank all the authors for their great work.
