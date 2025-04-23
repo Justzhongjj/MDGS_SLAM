@@ -102,7 +102,7 @@ You can donwload our dataset from [google cloud](https://drive.google.com/drive/
 ## 3. Run
 ### 3.1 Replica
 ```bash
-# Single Process: Recommended, More Stable
+# Single Process: 
 python slam.py --config ./configs/replica/office0.yaml
 # Multi Process:
 python slam.py --config configs/rgbd/replica/office0_sp.yaml
@@ -117,21 +117,21 @@ python slam_mp.py --config ./configs/tum/fr1_desk.yaml
 
 ### 3.4 Ours
 ```bash
-# Single Process: Recommended, More Stable
+# Single Process: 
 python slam.py --config ./configs/ours/hotel.yaml
 # Multi Process: 
 python slam_mp.py --config ./configs/ours/hotel.yaml
 ```
 
 ## 4. Evaluate
-
+To evaluate our method, please add --eval to the command line argument:
 ### 4.1 Replica
 ```bash
-python metric.py --config ./configs/replica/office0.yaml
+python slam.py --config ./configs/replica/office0.yaml --eval
 ```
 ### 4.2 TUM-RGBD
 ```bash
-python metric.py --config ./configs/tum/fr1_desk.yaml
+python slam_mp.py --config ./configs/tum/fr1_desk.yaml --eval
 ```
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
