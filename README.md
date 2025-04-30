@@ -17,8 +17,8 @@ zhongjj
 </table>
 
 
-This repository contains the official authors implementation associated with the paper "MD-SLAM: Real-time 3D Reconstruction
-at Scale Using Gaussian Splatting", which can be found [here](https://gapszju.github.io/RTG-SLAM/static/pdfs/RTG-SLAM_arxiv.pdf).
+This repository contains the official authors implementation associated with the paper "MDGS-SLAM: Real-time 3D Reconstruction
+at Scale Using Gaussian Splatting", which can be found [here](链接).
 
 ## 1. Installation
 
