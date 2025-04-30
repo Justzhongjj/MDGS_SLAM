@@ -25,7 +25,7 @@ at Scale Using Gaussian Splatting", which can be found [here](链接).
 ### 1.1 Clone the Repository
 
 ```
-git clone --recursive https://github.com/Justzhongjj/MD_SLAM
+git clone --recursive https://github.com/Justzhongjj/MDGS_SLAM
 ```
 
 ### 1.2 Python Environment
