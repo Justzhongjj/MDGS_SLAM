@@ -2,7 +2,7 @@
 # Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
 
 zhongjj  
-<h3 align="center"><a href="">Paper</a> | <a href="【MDGS-SLAM】 https://www.bilibili.com/video/BV16sGXzFEms/?share_source=copy_web&vd_source=1bf14fa95c6af9b6f95ec59f828e77e9">Video</a> | <a href="">Project Page</a></h3>
+<h3 align="center"><a href="">Paper</a> | <a href="https://www.bilibili.com/video/BV16sGXzFEms/?share_source=copy_web&vd_source=1bf14fa95c6af9b6f95ec59f828e77e9">Video</a> | <a href="">Project Page</a></h3>
 
 
 <table>
