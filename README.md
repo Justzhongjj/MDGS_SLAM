@@ -2,6 +2,9 @@
 # Real-Time RGB-D Gaussian SLAM with Multi-View Ray-Correspondence Densification for Scene Reconstruction
 
 zhongjj  
+<h3 align="center"><a href="">Paper</a> | <a href="https://www.bilibili.com/video/BV16sGXzFEms/?spm_id_from=333.1387.top_right_bar_window_history.content.click&vd_source=4841584f7956202910d5f05d57759ce4">Video</a> | <a href="">Project Page</a></h3>
+
+
 <table>
     <tr>
         <td ><center><img src="https://github.com/Justzhongjj/MD_SLAM/blob/main/media/fr3_office.gif" ></center></td>
